@@ -59,7 +59,7 @@ int main() {
 		return -1;
 	}
 
-	for (i = 0; i < n; i++) {
+	for (i = 0; i <= n; i++) {
 		cows[get_cow(entries[i].name)].gallons += entries[i].change;
 		if (cows[get_cow(entries[i].name)].gallons >= greatest) {
 			greatest = cows[get_cow(entries[i].name)].gallons;
@@ -67,5 +67,5 @@ int main() {
 		}
 	}
 
-	fprintf(out, "%d", cnt + 1);
+	fprintf(out, "%d", cnt);
 }
