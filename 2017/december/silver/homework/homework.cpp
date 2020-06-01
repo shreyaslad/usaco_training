@@ -28,9 +28,9 @@ int main() {
 	}
 
 	vector<int> vcpy;
-	int total[n - 1];
+	int total[n - 2];
 
-	for (int i = 0; i < n - 1; i++) {
+	for (int i = 0; i < n - 2; i++) {
 		vcpy = v;
 		sort(vcpy.begin(), vcpy.end());
 		vcpy.erase(vcpy.begin());
@@ -44,7 +44,7 @@ int main() {
 	int greatest = 0;
 	int idx = 0;
 
-	for (int i = 0; i < n - 1; i++) {
+	for (int i = 0; i < n - 2; i++) {
 		if (greatest <= total[i]) {
 			greatest = total[i];
 			idx = i;
