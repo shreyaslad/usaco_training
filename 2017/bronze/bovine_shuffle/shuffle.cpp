@@ -8,16 +8,12 @@ TASK: shuffle
 #include <stdlib.h>
 #include <stdio.h>
 
-using namespace std;
-
 int main() {
 	FILE* in = fopen("shuffle.in", "r");
 	FILE* out = fopen("shuffle.out", "w");
 
-	int n; // number of cows
+	int n;
 	fscanf(in, "%d\n", &n);
-
-	printf("Cows: %d\n", n);
 
 	int a[n + 1];
 	int cows[n + 1];
