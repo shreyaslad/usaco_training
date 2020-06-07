@@ -27,16 +27,13 @@ int main() {
 		v.push_back(cur);
 	}
 
-	vector<int> vcpy;
 	int total[n - 2];
 
 	for (int i = 0; i < n - 2; i++) {
-		vcpy = v;
+		vector<int> vcpy = v;
 		sort(vcpy.begin(), vcpy.end());
-		vcpy.erase(vcpy.begin());
 
-		int acc = accumulate(vcpy.begin(), vcpy.end(), 0);
-		total[i] = acc / vcpy.size();
+		total[i] = accumulate(vcpy.begin() + 1, vcpy.end(), 0) / (vcpy.size() - 1);
 
 		v.erase(v.begin());
 	}
@@ -52,4 +49,7 @@ int main() {
 	}
 
 	fprintf(out, "%d", idx);
+
+	fclose(in);
+	fclose(out);
 }

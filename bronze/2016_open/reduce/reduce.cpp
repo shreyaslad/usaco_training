@@ -14,12 +14,14 @@ typedef struct {
 	int y;
 } coord_t;
 
+// instead of iterating over all coords,
+// remove the only the maximum and minimum and test
+// this will yield faster results
 int calculate_min_area(coord_t* coords, int size, int ignore_idx) {
 	coord_t bl = {COORD_MAX, COORD_MAX};
 	coord_t tr = {0, 0};
 
 	for (int i = 0; i < size; i++) {
-		printf("Iteration: %d\n", i);
 		if (!(i == ignore_idx)) {
 			if (bl.x > coords[i].x)
 				bl.x = coords[i].x;
@@ -63,4 +65,7 @@ int main() {
 	}
 	
 	fprintf(out, "%d", prev);
+
+	fopen(in);
+	fopen(out);
 }

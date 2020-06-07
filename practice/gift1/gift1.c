@@ -78,5 +78,8 @@ int main() {
 		fprintf(out, "%s %d\n", names[i], money[i]);
 	}
 
+	fclose(in);
+	fclose(out);
+
 	return 0;
 }

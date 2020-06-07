@@ -31,4 +31,7 @@ int main() {
 	fscanf(in, "%d %d %d %d\n", a.x1, a.x2, a.y1, a.y2);
 	fscanf(in, "%d %d %d %d\n", b.x1, b.x2, b.y1, b.y2);
 	fscanf(in, "%d %d %d %d\n", c.x1, c.x2, c.y1, c.y2);
+
+	fclose(in);
+	fclose(out);
 }

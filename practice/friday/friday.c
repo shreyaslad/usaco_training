@@ -66,4 +66,7 @@ int main() {
 	for (int i = 0; i < 7; i++) {
 		fprintf(out, "%d ", tpm[i]);
 	}
+
+	fclose(in);
+	fclose(out);
 }

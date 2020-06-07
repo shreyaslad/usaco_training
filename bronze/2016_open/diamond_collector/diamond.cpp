@@ -50,4 +50,7 @@ int main() {
 
 	// acc should now hold the greatest number of diamonds
 	fprintf(out, "%d\n", acc);
+
+	fclose(in);
+	fclose(out);
 }

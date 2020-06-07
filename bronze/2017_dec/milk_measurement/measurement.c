@@ -68,4 +68,7 @@ int main() {
 	}
 
 	fprintf(out, "%d", cnt);
+
+	fclose(in);
+	fclose(out);
 }

@@ -40,4 +40,7 @@ int main() {
 	for (int i = 1; i <= n; i++) {
 		fprintf(out, "%d\n", cows[i]);
 	}
+
+	fclose(in);
+	fclose(out);
 }
