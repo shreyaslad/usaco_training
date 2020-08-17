@@ -4,6 +4,9 @@ LANG: C++
 TASK: diamond
 */
 
+#pragma GCC optimize("Ofast")
+#pragma GCC target("avx,avx2,sse,sse2")
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <algorithm>

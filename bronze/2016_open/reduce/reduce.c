@@ -1,11 +1,14 @@
 /*
 ID: qoob
-LANG: C++
+LANG: C
 TASK: reduce
 */
 
 #include <stdlib.h>
 #include <stdio.h>
+
+#pragma GCC optimize("Ofast")
+#pragma GCC target("avx,avx2,sse,sse2")
 
 #define COORD_MAX 40000
 
@@ -66,6 +69,6 @@ int main() {
 	
 	fprintf(out, "%d", prev);
 
-	fopen(in);
-	fopen(out);
+	fclose(in);
+	fclose(out);
 }

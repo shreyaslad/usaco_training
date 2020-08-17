@@ -7,6 +7,9 @@ TASK: billboard
 #include <stdlib.h>
 #include <stdio.h>
 
+#pragma GCC optimize("Ofast")
+#pragma GCC target("avx,avx2,sse,sse2")
+
 typedef struct {
 	int x;
 	int y;

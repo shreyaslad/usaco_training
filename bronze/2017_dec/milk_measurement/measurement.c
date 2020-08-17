@@ -10,6 +10,9 @@ TASK: measurement
 #include <stdio.h>
 #include <string.h>
 
+#pragma GCC optimize("Ofast")
+#pragma GCC target("avx,avx2,sse,sse2")
+
 typedef struct {
 	int day;
 	char name[20];

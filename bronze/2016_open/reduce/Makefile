@@ -1,3 +1,3 @@
 all:
-	g++ reduce.cpp
+	gcc reduce.cpp
 	./a.out

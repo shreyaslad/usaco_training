@@ -4,6 +4,9 @@ LANG: C++
 TASK: shuffle
 */
 
+#pragma GCC optimize("Ofast")
+#pragma GCC target("avx,avx2,sse,sse2")
+
 #include <stdint.h>
 #include <stdlib.h>
 #include <stdio.h>

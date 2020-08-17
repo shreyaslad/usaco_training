@@ -1,6 +1,6 @@
 /*
 ID: qoob
-LANG: C++
+LANG: C
 TASK: billboard
 */
 
@@ -12,6 +12,9 @@ Draw a new rectangle that fits in the bounds of the other
 Calculate the intersection area
 Rinse and repeat
 */
+
+#pragma GCC optimize("Ofast")
+#pragma GCC target("avx,avx2,sse,sse2")
 
 #include <stdint.h>
 #include <stdlib.h>

@@ -1,3 +1,3 @@
 all:
-	g++ bb.cpp
+	gcc bb.cpp
 	./a.out
