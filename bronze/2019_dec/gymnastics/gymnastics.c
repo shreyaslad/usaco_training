@@ -39,6 +39,7 @@ typedef struct {
  * will be the final solution.
  */
 
+static inline
 int update(pair_t* pairs,
            size_t  n,
            size_t  a,
@@ -46,6 +47,7 @@ int update(pair_t* pairs,
 
     for (size_t i = 0; i < n; i++) {
         pair_t cur = pairs[i];
+
         if (cur.a == a && cur.b == b) {
             cur.cnt++;
 
@@ -61,13 +63,20 @@ int main() {
     FILE* out = fopen("gymnastics.out", "w");
 
     size_t k, n;
-    fscanf(in, "%lu %lu\n", &k, &n);
+    fscanf(in, "%ln %ln\n", &k, &n);
 
     pair_t* pairs = malloc(sizeof(pair_t));
 
-    size_t j = 0;
-    for (size_t i = 0; i < pow(n, 2); i++) {
-        // TODO
+    /**
+     * When in loops that perform heavy lifting,
+     * I heard it's best to use inline functions
+     * to allow the compiler to optimize around them.
+     * 
+     * write is faster than printf, so use it when possible
+     */
+
+    for (size_t i = 0; i < k; i++) {
+        
     }
 
     return 0;
